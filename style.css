@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+	scroll-padding-top: 11em;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+a:hover {
+	color: black;
+}
+
+/*Above is standard css3 for all css files. Always have the above.*/
+
+body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+header {
+	display: block;
+	position: fixed;
+	left: 0; 
+	right: 0; 
+	top: 0;	
+	background: cornsilk;
+}
+
+main {
+	padding: 2em;
+	margin: 4em;
+	margin-top: 12em;
+	text-align: justify;
+	line-height: 1.5;
+	background: lavender;
+}
+
+menu li, menu li a {
+	display: inline-grid;
+	background: orangered;
+	border-radius: 12px;
+	padding: 4px;
+	color: white;
+}
+
+menu li:hover, menu li a:hover {
+	background: white;
+	color: orangered;
+}
+
+section {
+	padding-left: 32px;
+}
