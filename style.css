@@ -11,7 +11,18 @@ a:hover {
 	color: black;
 }
 
-/*Above is standard css3 for all css files. Always have the above.*/
+/*Above is standard css3. Should not remove the above.*/
+/* MSU Denver Colors:  https://www.msudenver.edu/brand-central/brand-colors-typography/ */
+:root {
+	--brand-blue:  #00447c;	/*MSU Denver Blue*/
+	--brand-red:  #d11242;	/*MSU Denver Red*/
+	--brand-grey: #717073;	/*MSU Denver Grey*/
+	--navbar-offset:  4em;
+}
+
+h1,h2,h3,h4,h5,p {
+	color:  white;
+}
 
 body {
 	padding: 0;
@@ -19,27 +30,39 @@ body {
 	text-align: center;
 }
 
+footer {
+	margin-top: calc(-1 * var(--navbar-offset));
+}
+
 header {
-	display: block;
+	display: inline-flex;
 	position: fixed;
 	left: 0; 
 	right: 0; 
-	top: 0;	
-	background: cornsilk;
+	top: 0;
+	background: var(--brand-grey);
+}
+
+header h1, header p {
+	margin: 0;
+}
+
+header nav {
+	margin-left: 8em;
 }
 
 main {
 	padding: 2em;
-	margin: 4em;
-	margin-top: 12em;
+	margin-top: var(--navbar-offset);
+	margin-bottom: 4em;
 	text-align: justify;
 	line-height: 1.5;
-	background: lavender;
+	background: var(--brand-blue);
 }
 
 menu li, menu li a {
 	display: inline-grid;
-	background: orangered;
+	background: var(--brand-red);
 	border-radius: 12px;
 	padding: 4px;
 	color: white;
@@ -47,7 +70,7 @@ menu li, menu li a {
 
 menu li:hover, menu li a:hover {
 	background: white;
-	color: orangered;
+	color: var(--brand-blue);
 }
 
 section {
